@@ -32,5 +32,13 @@ This repository contains a sales prediction system using ARIMA models to analyze
 
 ## 🚀 How to Run
 
-
+- Create and activate the virtual environment (if it doesn't exist)
+  - python -m venv venv
+  - .\venv\Scripts\activate
+- Install dependencies
+  - pip install -r requirements.txt
+- Run the main script
+  - python main.py --target_date (date)
+  - Note: Replace (date) with the desired date in YYYY-MM-DD format  
+  - Example: python main.py --target_date 2026-09-25
 
