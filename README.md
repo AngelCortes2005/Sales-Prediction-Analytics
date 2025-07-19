@@ -1,32 +1,36 @@
 # Sales-Prediction-Analytics
 
-Este repositorio contiene un sistema de predicción de ventas utilizando modelos ARIMA para analizar datos transaccionales generados sintéticamente. El proyecto incluye:
+# 📈 Sales Prediction System with ARIMA
 
-Generación de datos sintéticos (generator.py):
+This repository contains a sales prediction system using ARIMA models to analyze synthetically generated transactional data.
 
-Simula transacciones multi-item y single-item con correlaciones entre productos.
+## 🧩 Project Components
 
-Configurable por fecha, volumen de datos y formato de salida (CSV/Parquet).
+### 🔹 Synthetic Data Generation (`generator.py`)
+- Simulates **multi-item** and **single-item** transactions with correlations between products.
+- Configurable by:
+  - Date range
+  - Data volume
+  - Output format: **CSV** or **Parquet**
 
-Modelado predictivo (main.py):
+### 🔹 Predictive Modeling (`main.py`)
+- Predicts future sales by channel: **Online**, **In-Store**, and **Mobile** using **ARIMA** models.
+- Computes:
+  - Confidence intervals for each prediction
+  - Certainty metrics to assess accuracy
 
-Predice ventas futuras por canal (Online, In-Store, Mobile) usando ARIMA.
+### 🔹 Reference Data (`channels.csv`)
+- Maps channel IDs to descriptive names to make results easier to interpret.
 
-Calcula intervalos de confianza y métricas de certeza para cada predicción.
+## 🛠️ Technologies Used
 
-Datos de referencia (channels.csv):
+- **Python 3.10+**
+- [**Pandas**] – Data manipulation
+- [**Statsmodels**] – ARIMA modeling
+- [**PyArrow**] – Parquet file support
+- [**NumPy**] – Numerical computations
 
-Mapeo de IDs de canales a nombres descriptivos.
+## 🚀 How to Run
 
-🛠️ Tecnologías
-Python 3.10+
-
-Pandas (manipulación de datos)
-
-Statsmodels (ARIMA)
-
-PyArrow (Parquet)
-
-NumPy (cálculos numéricos)
 
 
