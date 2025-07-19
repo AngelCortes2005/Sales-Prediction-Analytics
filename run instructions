@@ -1,0 +1,12 @@
+# 1. Crear y activar el entorno virtual (si no existe)
+python -m venv venv
+.\venv\Scripts\activate
+
+# 2. Instalar las dependencias
+pip install -r requirements.txt
+
+# 3. Ejecutar el script principal
+python main.py --target_date (date)
+
+# Nota: Reemplaza (date) con la fecha deseada en formato YYYY-MM-DD
+# Ejemplo: python main.py --target_date 2026-09-25
